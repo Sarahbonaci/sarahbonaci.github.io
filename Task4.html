@@ -1,44 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
-    <title>Experiment 3 - HTML Table</title>
+    <title>HTML Forms</title>
 </head>
 
 <body>
-    <h1>Experiment 3 - HTML Table</h1>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Photo</th>
-                <th>Dog Breed</th>
-                <th>Size</th>
-                <th>Link</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="http://www.dogbreedchart.com/img/beagle.jpg" alt="beagle"></td>
-                <td>Beagle</td>
-                <td>2</td>
-                <td><a href="https://en.wikipedia.org/wiki/Beagle">More Info</a></td>
-            </tr>
-            <tr>
-                <td><img src="http://www.dogbreedchart.com/img/boxer.jpg" alt="boxer"></td>
-                <td>Boxer</td>
-                <td>3</td>
-                <td><a href="https://en.wikipedia.org/wiki/Boxer_(dog)">More Info</a></td>
-            </tr>
-            <tr>
-                <td><img src="http://www.dogbreedchart.com/img/german-shepherd-dog.jpg" alt="german-shepard"></td>
-                <td>German Shepard</td>
-                <td>4</td>
-                <td><a href="https://en.wikipedia.org/wiki/German_Shepherd">More Info</a></td>
-            </tr>
-        </tbody>
+    <h1>Sign In</h1>
 
-    </table>
+    <h2>Form Enhancements</h2>
+    <form action="http://www.google.com">
+        <input name="username" type="text" placeholder="username">
+        <input name="password" type="password" placeholder="password" minlength="8">
+        <input type="submit">
+    </form>
+
+    <!--
+    <h2>Google Test Search</h2>
+    <form action="http://www.google.com">
+        <input name="q" type="text" placeholder="search query">
+        <input type="submit">
+    </form>
+    -->
+
+    <!--
+    <h2>Form with Labels</h2>
+    <h3>Option 1</h3>
+    <form action="http://www.google.com">
+        <label>Username: <input name="username" type="text"></label>
+        <label>Password: <input name="password" type="password"></label>
+        <input type="submit">
+    </form>
+    -->
+
+    <!-- Instead of nesting the label tag, we connect them using for and id. 
+        This will support screen readers for the visually impaired. -->
+    <!--
+    <h3>Option 2</h3>
+    <form action="http://www.google.com">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text">
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password">
+        <input type="submit">
+    </form>
+    -->
+
+    <!-- 
+    <h2>Form Validation</h2>
+    <form>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" required>
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password" required>
+        <input type="submit">
+    </form>
+    -->
 </body>
 
 </html>
