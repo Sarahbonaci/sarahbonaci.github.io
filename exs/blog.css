@@ -1,0 +1,40 @@
+.date{
+    color: #3098dd;
+    text-transform: uppercase;
+}
+
+
+h1{
+
+    color: #354b63;
+
+}
+
+.bordered{
+
+    border-left: 3px #bdc7cf solid;
+    padding: 5px;
+
+}
+
+h2{
+
+    color: #354b63;
+
+}
+
+body{
+
+    font-family: 'Raleway', sans-serif;
+    margin: auto #bdc7cf;
+    border: 20px #bdc7cf solid;
+    width: 75%;
+    padding: 20px;
+}
+
+body {
+
+    margin: 0 auto;
+    
+}
+
